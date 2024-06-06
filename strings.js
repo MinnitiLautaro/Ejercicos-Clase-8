@@ -18,3 +18,17 @@ let x4 = "oRNITORRINCOS";
 z4 = x4.substring(1);
 y4 = x4.substring(0,1);
 console.log(y4.toUpperCase() + z4.toLowerCase());
+
+//8 - Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco. Encontrar la posición del primer espacio en blanco y guardarla en una variable (utilizar indexOf).
+let x5 = "ornito rrincos";
+y5 = x5.indexOf(" ");
+console.log(y5);
+
+//9 - Crear una variable de tipo string con al menos 2 palabras largas (10 caracteres y algún espacio entre medio). Utilizar los métodos de los ejercicios anteriores para generar un nuevo string que tenga la primera letra de ambas palabras en mayúscula y las demás letras en minúscula (utilizar indexOf, substring, toUpperCase, toLowerCase y el operador +).
+let x6 = "ornitorrincos balisticos";
+y6 = x6.indexOf(" ");
+z6 = x6.substring(0,1);
+zz6 = x6.substring(1,y6);
+a6 = x6.substring(y6 + 1, y6 + 2);
+aa6 = x6.substring(y6+2);
+console.log(z6.toUpperCase() + zz6.toLowerCase() + " " + a6.toUpperCase() + aa6.toLowerCase());
