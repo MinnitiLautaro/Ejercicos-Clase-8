@@ -40,3 +40,13 @@ console.log(validateInteger2("hola"));
 console.log(validateInteger2(3.5));
 
 //27 - Convertir la validación del ejercicio 6d) en una función separada y llamarla dentro de la función suma probando que todo siga funcionando igual.
+
+let suma3 = function (x, y) {
+
+    if (isNaN(x) || isNaN(y)) {
+        alert("Uno de los parámetros tiene error")
+        return NaN
+    } else {
+        return validateInteger2(x) + validateInteger2(y)
+    }
+}
