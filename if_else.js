@@ -15,7 +15,7 @@ v. “Adulto” entre 31 y 60 años;
 vi. “Adulto mayor” entre 61 y 75 años;
 vii. “Anciano” si es mayor a 75 años.   */
 
-let age = Math.floor(Math.random() * 100);
+let age = Math.random() * 100;
 if (age < 2) {
     alert("Bebe");
 } else if (age >= 2 && age <= 12) {
@@ -24,4 +24,11 @@ if (age < 2) {
     alert("Adolescente");
 } else if (age >= 20 && age <= 30) {
     alert("Joven");
-}
+} else if (age >=31 && age <= 60){
+    alert("Adulto");
+} else if (age >=61 && age <= 75){
+    alert("Adulto mayor")
+} else if (age >=76){
+    alert("Anciano")
+} 
+console.log(age);
